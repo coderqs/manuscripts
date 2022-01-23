@@ -11,18 +11,18 @@ jobs:
         # (Optional)If you have the theme added as submodule, you can pull it and use the most updated version
         run: git submodule update --init --recursive
       
-      #- name: Read Hugo info
-      #  id: hugo-info
-      #  run: |
-      #    . ./.HUGO_VERSION
-      #    echo "::set-output name=HUGO_VERSION::${HUGO_VERSION}"
-      #    echo "::set-output name=HUGO_EXTENDED::${HUGO_EXTENDED}"
+      - name: Read Hugo info
+        id: hugo-info
+        run: |
+          . ./.HUGO_VERSION
+          echo "::set-output name=HUGO_VERSION::${HUGO_VERSION}"
+          echo "::set-output name=HUGO_EXTENDED::${HUGO_EXTENDED}"
 
       - name: Setup hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: "latest" # '${{ steps.hugo-info.outputs.HUGO_VERSION }}'
-          extended: true # ${{ steps.hugo-info.outputs.HUGO_EXTENDED }}
+          hugo-version: '${{ steps.hugo-info.outputs.HUGO_VERSION }}' #"latest"
+          extended: ${{ steps.hugo-info.outputs.HUGO_EXTENDED }} #true 
 
       - name: Build
         # remove --minify tag if you do not need it
@@ -39,4 +39,4 @@ jobs:
           user_name: coderqs
           user_email: <coderqs@coderqs.com>
           publish_branch: main
-          #   cname: coderqs.com
+          cname: blog.coderqs.com
