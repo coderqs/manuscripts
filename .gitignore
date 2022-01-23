@@ -25,5 +25,7 @@ _testmain.go
 public
 resources
 
+.hugo_build.lock
+
 assets/jsconfig.json
 .DS_Store

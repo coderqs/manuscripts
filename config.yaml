@@ -1,6 +1,6 @@
-baseurl: https://example.com
-languageCode: en-us
-theme: hugo-theme-stack
+baseurl: https://coderqs.github.io
+languageCode: zh-cn
+theme: stack
 paginate: 5
 title: Example Site
 
@@ -12,7 +12,7 @@ googleAnalytics:
 
 # Theme i18n support
 # Available values: en, fr, id, ja, ko, pt-br, zh-cn, zh-tw, es, de, nl, it, th, el, uk
-DefaultContentLanguage: en
+DefaultContentLanguage: zh-cn
 
 # Set hasCJKLanguage to true if DefaultContentLanguage is in [zh-cn ja ko]
 # This will make .Summary and .WordCount behave correctly for CJK languages.
@@ -186,11 +186,6 @@ menu:
           params:
             icon: brand-github
             
-        - identifier: twitter
-          name: Twitter
-          url: https://twitter.com
-          params:
-            icon: brand-twitter
 
 related:
     includeNewer: true
