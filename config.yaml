@@ -16,11 +16,14 @@ DefaultContentLanguage: zh-cn
 
 # Set hasCJKLanguage to true if DefaultContentLanguage is in [zh-cn ja ko]
 # This will make .Summary and .WordCount behave correctly for CJK languages.
-hasCJKLanguage: false
+hasCJKLanguage: true
 
 permalinks:
     post: /p/:slug/
     page: /:slug/
+
+# whether to use emoji code
+enableEmoji: true
 
 params:
     mainSections:
@@ -34,12 +37,12 @@ params:
         customText:
 
     dateFormat:
-        published: Jan 02, 2006
-        lastUpdated: Jan 02, 2006 15:04 MST
+        published: 2006-01-02
+        lastUpdated: 2006-01-02 15:04 UTC8
 
     sidebar:
         emoji: 🍥
-        subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        subtitle: 不积跬步，无以至千里
         avatar:
             enabled: true
             local: true
@@ -52,6 +55,8 @@ params:
         license:
             enabled: true
             default: Licensed under CC BY-NC-SA 4.0
+        edit:
+            enabled: true
 
     comments:
         enabled: true
@@ -129,15 +134,15 @@ params:
     widgets:
         enabled:
             - search
+            - categories
             - archives
             - tag-cloud
-            - categories
 
         archives:
-            limit: 5
+            limit: 10
 
         tagCloud:
-            limit: 10
+            limit: 100
 
         categoriesCloud:
             limit: 20
@@ -175,7 +180,7 @@ params:
 menu:
     main:
         - identifier: home
-          name: Home
+          name: 首页
           url: /
           weight: -100
           params:
