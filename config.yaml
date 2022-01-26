@@ -131,6 +131,7 @@ params:
             - search
             - archives
             - tag-cloud
+            - categories
 
         archives:
             limit: 5
@@ -138,6 +139,9 @@ params:
         tagCloud:
             limit: 10
 
+        categoriesCloud:
+            limit: 20
+            
     opengraph:
         twitter:
             # Your Twitter username
