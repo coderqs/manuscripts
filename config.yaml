@@ -2,7 +2,7 @@ baseurl: https://coderqs.github.io
 languageCode: zh-cn
 theme: stack
 paginate: 5
-title: Example Site
+title: 清松小站
 
 # Change it to your Disqus shortname before using
 disqusShortname: hugo-theme-stack
@@ -34,7 +34,7 @@ params:
 
     footer:
         since: 2020
-        customText:
+        customText: 
 
     dateFormat:
         published: 2006-01-02
@@ -191,7 +191,7 @@ menu:
     social:
         - identifier: github
           name: GitHub
-          url: https://github.com/CaiJimmy/hugo-theme-stack
+          url: https://github.com/coderqs
           params:
             icon: brand-github
             
