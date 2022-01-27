@@ -187,7 +187,14 @@ menu:
               ### For demonstration purpose, the home link will be open in a new tab
               newTab: false
               icon: home
-            
+        - identifier: rss
+          name: RSS
+          url: /index.xml
+          weight: -10
+          pre: RSS
+          params:
+              newTab: true
+
     social:
         - identifier: github
           name: GitHub
@@ -218,3 +225,7 @@ markup:
         startLevel: 2
     highlight:
         noClasses: false
+
+enableGitInfo: true
+frontmatter:
+  lastmod: [":git", "lastmod"]
