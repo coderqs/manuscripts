@@ -38,7 +38,7 @@ params:
 
     dateFormat:
         published: 2006-01-02
-        lastUpdated: 2006-01-02 15:04 UTC8
+        lastUpdated: 2006-01-02 15:04 UTC
 
     sidebar:
         emoji: 🍥
@@ -185,9 +185,9 @@ menu:
           weight: -100
           params:
               ### For demonstration purpose, the home link will be open in a new tab
-              newTab: true
+              newTab: false
               icon: home
-    
+            
     social:
         - identifier: github
           name: GitHub
