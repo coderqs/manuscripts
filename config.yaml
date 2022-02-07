@@ -182,7 +182,7 @@ params:
 menu:
     main:
         - identifier: home
-          name: 首页
+          name: Home
           url: /
           weight: -100
           params:
@@ -204,7 +204,16 @@ menu:
           url: https://github.com/coderqs
           params:
             icon: brand-github
-            
+        - identifier: mail
+          name: Email
+          url: coderqs@coderqs.com
+          params:
+            icon: mail
+        - identifier: wiki
+          name: wiki
+          url: https://wiki.coderqs.com
+          params:
+            icon: book
 
 related:
     includeNewer: true
