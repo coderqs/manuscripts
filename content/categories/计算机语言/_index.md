@@ -1,7 +1,7 @@
 ---
-title: "计算机语言"
-description: "各种类别的计算机语言"
-slug: "计算机语言"
+title: "璁＄畻鏈鸿瑷�"
+description: "鍚勭绫诲埆鐨勮绠楁満璇█"
+slug: "璁＄畻鏈鸿瑷�"
 image: ""
 style:
     background: "#2a9d8f"
