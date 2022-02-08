@@ -241,4 +241,4 @@ markup:
         noClasses: true
 
 frontmatter:
-  lastmod: [":git", "lastmod"]
+    lastmod: [":git", "lastmod"]
