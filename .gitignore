@@ -29,3 +29,5 @@ resources
 
 assets/jsconfig.json
 .DS_Store
+
+.vs
