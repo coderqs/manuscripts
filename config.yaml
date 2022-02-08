@@ -238,7 +238,13 @@ markup:
         ordered: true
         startLevel: 2
     highlight:
+        codeFences: true
         noClasses: true
+        guessSyntax: true
+        lineNoStart: 1
+        lineNos: true
+        style: native
+        tabWidth: 4 
 
 frontmatter:
     lastmod: [":git", "lastmod"]
