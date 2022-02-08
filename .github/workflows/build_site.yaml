@@ -3,11 +3,13 @@ on: push
 jobs:
   deploy:
     runs-on: ubuntu-20.04
+    env:
+      TZ: Asia/Shanghai
     steps:
-      #- name: Git checkout
-      #  uses: actions/checkout@v2
-      - name: Git clone
-        run: git clone --branch=main --quiet https://github.com/coderqs/manuscripts.git
+      - name: Git checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
 
       - name: Update theme
         # (Optional)If you have the theme added as submodule, you can pull it and use the most updated version
