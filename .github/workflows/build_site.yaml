@@ -7,7 +7,7 @@ jobs:
       #- name: Git checkout
       #  uses: actions/checkout@v2
       - name: Git clone
-         run: git clone --branch=main --quiet https://github.com/$SOURCE_REPO
+        run: git clone --branch=main --quiet https://github.com/$SOURCE_REPO
 
       - name: Update theme
         # (Optional)If you have the theme added as submodule, you can pull it and use the most updated version
