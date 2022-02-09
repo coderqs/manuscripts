@@ -3,12 +3,14 @@ on: push
 jobs:
   deploy:
     runs-on: ubuntu-20.04
+    env:
+      TZ: Asia/Shanghai
 
     steps:
-      - name: Set Timezone
-        uses: szenius/set-timezone@v1.0
-        with:
-          timezoneLinux: "Asia/Singapore"
+      #- name: Set Timezone
+      #  uses: szenius/set-timezone@v1.0
+      #  with:
+      #    timezoneLinux: "Asia/Shanghai"
 
       - name: Git checkout
         uses: actions/checkout@v2
