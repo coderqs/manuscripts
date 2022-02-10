@@ -247,4 +247,4 @@ markup:
         tabWidth: 4 
 
 frontmatter:
-    lastmod: [":fileModTime", "lastmod"]
+    lastmod: [":git", "lastmod"]
