@@ -1,7 +1,7 @@
 baseurl: https://coderqs.github.io
 languageCode: zh-cn
 theme: stack
-paginate: 5
+paginate: 10
 title: 清松小站
 
 TimeZone: Asia/Shanghai
@@ -247,4 +247,4 @@ markup:
         tabWidth: 4 
 
 frontmatter:
-    lastmod: [":git", "lastmod"]
+    lastmod: [":fileModTime", "lastmod"]
