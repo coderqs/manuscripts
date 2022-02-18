@@ -36,9 +36,19 @@ params:
     rssFullContent: true
     favicon:
 
+    toc: true
+
     footer:
         since: 2020
         customText: 
+        ccLicenseIcon: true
+        RunDays:
+            enabled: true
+            launchDate: "2022-01-01"
+        articleTotalStatistics: 
+            enabled: true
+            totalArticleWordEmoji: ⌨
+            totalArticleEmoji: 🧠
 
     dateFormat:
         published: 2006-01-02
@@ -55,7 +65,10 @@ params:
     article:
         math: true
         toc: true
+        styleUniform: true
         readingTime: true
+        showHeaderImage: false
+        permaLinks: true
         license:
             enabled: false
             default: Licensed under CC BY-NC-SA 4.0
