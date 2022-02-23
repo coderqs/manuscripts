@@ -1,5 +1,5 @@
 ---
-title: "计算机语言"
+title: "技巧"
 description: ""
 image: ""
 style:

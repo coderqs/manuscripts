@@ -12,7 +12,7 @@ enableGitInfo: true
 disqusShortname: hugo-theme-stack
 
 # GA Tracking ID
-googleAnalytics: 3231739850
+googleAnalytics: G-WXXWLT4GSM
 
 # Theme i18n support
 # Available values: en, fr, id, ja, ko, pt-br, zh-cn, zh-tw, es, de, nl, it, th, el, uk
@@ -23,7 +23,7 @@ DefaultContentLanguage: zh-cn
 hasCJKLanguage: true
 
 permalinks:
-    post: /p/:slug/
+    post: /:year/:month/:slug/
     page: /:slug/
 
 # whether to use emoji code
