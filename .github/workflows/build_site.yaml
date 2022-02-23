@@ -14,8 +14,13 @@ jobs:
       - name: Git checkout
         uses: actions/checkout@v2
         with:
-          submodules: true
           fetch-depth: 0
+          ref: main
+          submodules: true
+      
+      - name: Get all git tags
+        run: 
+          git fetch --prune --unshallow --tags
 
       - name: Read Hugo info
         id: hugo-info
