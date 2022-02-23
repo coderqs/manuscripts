@@ -5,7 +5,7 @@ description: ""
 slug: ""  
 image: ""  
 categories:  
-    - 工具
+    - software
 tags:  
     - Hugo
     - Blog

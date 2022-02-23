@@ -1,5 +1,8 @@
 name: CI
-on: push
+on: 
+  push:
+    branches:
+      - main
 jobs:
   deploy:
     runs-on: ubuntu-20.04
@@ -7,20 +10,13 @@ jobs:
       TZ: Asia/Shanghai
 
     steps:
-      #- name: Set Timezone
-      #  uses: szenius/set-timezone@v1.0
-      #  with:
-      #    timezoneLinux: "Asia/Shanghai"
 
       - name: Git checkout
         uses: actions/checkout@v2
         with:
+          submodules: true
           fetch-depth: 0
 
-      - name: Update theme
-        # (Optional)If you have the theme added as submodule, you can pull it and use the most updated version
-        run: git submodule update --init --recursive
-      
       - name: Read Hugo info
         id: hugo-info
         run: |
