@@ -9,6 +9,8 @@ categories:
 tags:  
     - Hugo
     - Blog
+series:
+    - Hugo Guide
 ---  
 
 ## 设置自动化部署 hugo 的步骤
