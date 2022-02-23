@@ -17,6 +17,8 @@ jobs:
           fetch-depth: 0
           ref: main
           submodules: true
+        run:
+          git log
       
       - name: Read Hugo info
         id: hugo-info
